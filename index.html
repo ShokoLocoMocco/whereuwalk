@@ -3,27 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="styles.css">
     <title>📍 Where U Walk</title>
     <link rel="icon" href="WUW_lg.png">
   </head>
   <body>
     <div id="appTitle">
-      <div><img src="WUW_lg.png" height=30px>🚶📦🚶‍♀️📦🚶‍♂️ </div>
-      <div>Welcome to <span>Where U Walk</span>!</div>
+      <div><img src="WUW_lg.png" height=24px><p>🚶📦🚶‍♀️📦🚶‍♂️</p></div>
+      <div>Welcome to <span>Where U Walk!</span></div>
     </div>
 
     <div id="game">
-        <div id="intro">Not sure where to bring your packages to? First, enter the building number here!</div>
-        <div id="stats">
+        <div id="intro">Not sure where to bring your packages to? We got You! Enter the building number here!</div>
+        <!-- <div id="stats">
             <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
             <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
             <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
-        </div>
+        </div> -->
+	<div id="stats">
+	 <form id="bldg">
+	    <label for="search">Enter Building Number</label>
+	    <input type="search" id="search" name="search">
+	    <input type="submit" name="submit">
+	 </form>
+	</div>
         <div id="controls">
-            <button id="button1">Go to store</button>
-            <button id="button2">Go to cave</button>
-            <button id="button3">Fight dragon</button>
+	    <span>Is it on </span>
+            <button id="button1">Avenue of Americas (6th Ave)</button>
+            <button id="button2">7th Avenue</button>
+            <button id="button3">Broadway</button>
+	    <span>?</span>
         </div>
         <div id="monsterStats">
             <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
